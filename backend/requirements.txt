@@ -1,0 +1,11 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+openai>=1.0.0
+python-multipart
+
+# Optional: For advanced AI features
+# langgraph==0.2.45
+# langchain==0.3.13
+# langchain-openai==0.2.14
+# langchain-core==0.3.28

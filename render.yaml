@@ -1,0 +1,16 @@
+# Render Deployment Configuration
+services:
+  - type: web
+    name: hr-payroll-ai
+    runtime: python
+    buildCommand: |
+      npm install
+      npm run build
+      pip install -r backend/requirements.txt
+    startCommand: cd backend && python main_agentic.py
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
+    healthCheckPath: /api/health
