@@ -233,7 +233,7 @@ class AgenticHRAssistant:
             ]
             
             response = self.client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="llama-3.3-8b-versatile",
                 messages=messages,
                 tools=self.tools,
                 tool_choice="auto",
